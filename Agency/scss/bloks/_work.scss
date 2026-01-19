@@ -1,0 +1,95 @@
+.work {
+    background-color: #fdf0e9;
+
+    &__container {
+        padding-bottom: 108px;
+        border-bottom: 1px solid #f3d1bf;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    &__left {
+        grid-column: 1 / 2;
+
+        &-text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #ef6d58;
+        }
+
+        &-heading {
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 48px;
+            color: #391400;
+            padding-top: 17px;
+            padding-bottom: 31px;
+            max-width: 448px;
+        }
+
+        &-title {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #391400a3;
+            padding-bottom: 28px;
+            max-width: 470px;
+        }
+
+        &-link {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 32px;
+            color: #391400;
+            text-decoration: none;
+        }
+    }
+
+    &__right {
+        grid-column: 2 / 3;
+
+        &-box {
+            display: flex;
+            gap: 60px;
+            padding-bottom: 59px;
+            align-items: center;
+
+            &-son {
+                font-weight: 800;
+                font-size: 72px;
+                line-height: 80px;
+                letter-spacing: -2px;
+                color: #391400;
+            }
+
+            &-text {
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 32px;
+                color: #391400;
+            }
+        }
+    }
+
+    @media (max-width: 660px) {
+        &__container {
+            padding-bottom: 71px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: auto auto;
+        }
+    &__left {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        padding-bottom: 72px;
+    }
+
+    &__right {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    }
+}

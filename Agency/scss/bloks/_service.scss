@@ -1,0 +1,138 @@
+.service {
+    background-color: #FDF0E9;
+
+    &__container {
+        padding-top: 126px;
+        padding-bottom: 94px;
+        background-image: url(../../imges/service.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 48%;
+    }
+
+    &__text {
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #EF6D58;
+    }
+
+    &__heading {
+        width: 463px;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #391400;
+        padding-top: 20px;
+        padding-bottom: 26px;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 32px;
+        color: #391400;
+        max-width: 470px;
+    }
+
+    &__div {
+        display: flex;
+        align-items: start;
+        gap: 20px;
+        padding-top: 31px;
+        padding-bottom: 36px;
+
+        &-text {
+            &-title {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24px;
+                color: #391400A3;
+                padding-bottom: 14px;
+                max-width: 386px;
+            }
+
+            &-name {
+                font-weight: 400;
+                line-height: 32px;
+                color: #391400;
+            }
+        }
+    }
+
+    &__btn {
+        font-weight: 900;
+        font-size: 14px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #391400;
+        width: 138px;
+        height: 48px;
+        box-shadow: 0px 3px 9px #39140014;
+        background-color: #fff;
+        border: 1px solid transparent;
+    }
+
+    @media (max-width: 1100px) {
+        &__container {
+            background-size: 440px 430px;
+        }
+
+        &__heading {
+            font-size: 52px;
+        }
+
+        &__title {
+            font-size: 18px;
+            max-width: 400px;
+        }
+
+    }
+
+    @media (max-width: 850px) {
+        &__container {
+            background-position: center top;
+            background-size: 100%;
+            padding-top: 700px;
+            padding-left: 25px;
+        }
+    }
+
+    @media (max-width: 650px) {
+        &__container {
+            padding-top: 580px;
+        }
+
+        &__heading {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 0px;
+            width: 100%;
+
+        }
+
+    }
+
+    @media (max-width: 375px) {
+        &__title {
+            width: 100%;
+        }
+
+        &__div {
+            gap: 5px;
+
+            &-text {
+                &-title {
+                    max-width: 100%;
+                }
+
+                &-name {
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+}

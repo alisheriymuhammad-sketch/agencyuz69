@@ -1,0 +1,150 @@
+.hero {
+  background-color: #28293e;
+
+  padding-bottom: 56px;
+  padding-top: 100px;
+
+  &__container {
+    background-image: url(../../imges/hero__bgi.png);
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+
+  &__text {
+    padding-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #ef6d58;
+  }
+
+  &__heading {
+    background-image: url(../../imges/hero__heading.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    padding: 24px 0;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 80px;
+    letter-spacing: -2px;
+    color: #fff;
+    width: 513px;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #ffffffa3;
+    width: 470px;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    padding: 34px 0 108px 0;
+  }
+
+  &__btn1 {
+    width: 154px;
+    height: 48px;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #ef6d58;
+    border: 1px solid #ef6d58;
+    border-radius: 6px;
+  }
+
+  &__btn2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  &__coment {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &-text1 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 32px;
+      color: #ffffffa3;
+    }
+
+    &-text2 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      color: #fff;
+    }
+  }
+  @media (max-width: 1100px){
+      &__container {
+        background-size: 420px 482px;
+      }
+  
+      &__heading {
+        font-size: 60px;
+        line-height: 70px;
+        width: 430px;
+      }
+  
+      &__title {
+        width: 400px;
+      }
+    }
+    
+    @media (max-width: 850px){
+        padding-top: 0;
+    
+        &__container {
+          background-position: center top;
+          background-size: 100%;
+        }
+    
+        &__text {
+          padding-top: 800px;
+        }
+    
+        &__heading {
+          width: 100%;
+          background-image: url();
+          font-size: 54px;
+          line-height: 64px;
+          letter-spacing: -1px;
+        }
+    
+        &__title {
+          width: 100%;
+        }
+    
+        &__coment {
+          &-text1 {
+            width: 100%;
+          }
+        }
+    }
+    
+    @media (max-width: 620px) {
+        &__text {
+          padding-top: 600px;
+        }
+      }
+    @media (max-width: 450px) {
+        &__text {
+          padding-top: 400px;
+        }
+    }
+  }
+
