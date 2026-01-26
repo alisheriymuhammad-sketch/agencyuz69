@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "Mont";
+  src: url("Mont-Regular.eot");
+  src:
+    local("Mont Regular"),
+    local("Mont-Regular"),
+    url("Mont-RegularItalic.eot?#iefix") format("embedded-opentype"),
+    url("Mont-Regular.woff2") format("woff2"),
+    url("Mont-Regular.woff") format("woff"),
+    url("Mont-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("Mont-Heavy.eot");
+  src:
+    local("Mont Heavy"),
+    local("Mont-Heavy"),
+    url("Mont-Heavy.eot?#iefix") format("embedded-opentype"),
+    url("Mont-Heavy.woff2") format("woff2"),
+    url("Mont-Heavy.woff") format("woff"),
+    url("Mont-Heavy.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("Mont-SemiBold.eot");
+  src:
+    local("Mont SemiBold"),
+    local("Mont-SemiBold"),
+    url("Mont-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("Mont-SemiBold.woff2") format("woff2"),
+    url("Mont-SemiBold.woff") format("woff"),
+    url("Mont-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+body {
+  line-height: 1;
+  font-family: "Mont", sans-serif;
+  font-style: normal;
+  background-color: var(--background-color);
+  color: var(--primary-color);
+}

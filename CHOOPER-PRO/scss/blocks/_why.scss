@@ -1,0 +1,73 @@
+.page__why-us {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.why-us {
+  background: url(img/INDEX/why-us/bg.png);
+}
+.why-us__items {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 34px 28px;
+}
+.why-us-icon {
+  padding: 17px;
+  background: linear-gradient(278.32deg, #0b3f37 -7.03%, #cb8d62 136.33%);
+}
+.why-us-title {
+  font-family: "Mont Heavy";
+  font-size: 20px;
+  line-height: 96.4%; // 19px
+  color: var(--secondary-color);
+  padding-top: 24px;
+  padding-bottom: 15px;
+}
+.why-us-text {
+  font-family: "Mont Light";
+  font-size: 14px;
+  line-height: 134.4%; // 19px
+  color: var(--secondary-color);
+  padding-bottom: 15px;
+}
+.why-us__read-more-block {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.why-us__read-more {
+  font-family: "Mont Heavy";
+  background: linear-gradient(65.81deg, #5e3928 -24.09%, #e4a16f 104.02%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@media (max-width: 1000px) {
+  .why-us__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 34px 49px;
+  }
+}
+@media (max-width: 590px) {
+  .page__why-us {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .why-us-title {
+    font-size: 16px;
+  }
+  .why-us-text {
+    font-size: 12px;
+  }
+  .why-us__read-more {
+    font-size: 14px;
+  }
+}
+@media (max-width: 450px) {
+  .why-us__items {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 20px;
+    justify-items: center;
+  }
+}

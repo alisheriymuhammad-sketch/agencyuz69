@@ -1,0 +1,33 @@
+[class*="__container"] {
+  max-width: 1940px;
+  margin: 0 auto;
+  padding: 0 260px;
+}
+
+@media (max-width: 1550px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0px 103px;
+  }
+}
+
+@media (max-width: 1024px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0px 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  [class*="__container"] {
+    max-width: none;
+    padding: 0px 15px;
+  }
+}
